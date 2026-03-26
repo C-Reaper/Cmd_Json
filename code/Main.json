@@ -1,0 +1,175 @@
+{
+  "app": {
+    "name": "MegaTestApp",
+    "version": "3.7.12",
+    "debug": true,
+    "releaseDate": "2024-01-15T14:30:00Z",
+    "author": {
+      "name": "John Developer",
+      "email": "developer@example.com"
+    }
+  },
+
+  "server": {
+    "host": "127.0.0.1",
+    "port": 8080,
+    "https": {
+      "enabled": true,
+      "certificate": "/etc/certs/server.crt",
+      "key": "/etc/certs/server.key"
+    },
+    "security": {
+      "rateLimit": 1500,
+      "allowedIPs": [
+        "192.168.1.1",
+        "10.0.0.2",
+        "172.16.0.10"
+      ]
+    }
+  },
+
+  "database": {
+    "engine": "postgres",
+    "host": "db.internal",
+    "port": 5432,
+    "username": "admin",
+    "password": "supersecret",
+    "maxConnections": 20,
+    "replicas": [
+      {
+        "host": "db-replica-1.internal",
+        "priority": 1
+      },
+      {
+        "host": "db-replica-2.internal",
+        "priority": 2
+      }
+    ],
+    "connection": {
+      "timeoutSeconds": 30,
+      "retryAttempts": 5
+    }
+  },
+
+  "features": {
+    "enablePayments": true,
+    "betaUserInterface": false,
+    "newRecommendationEngine": true,
+    "loggingEnhancements": true,
+    "aiAutoComplete": false
+  },
+
+  "users": [
+    {
+      "id": 1,
+      "name": "Alice",
+      "email": "alice@example.com",
+      "roles": ["admin", "editor"],
+      "createdAt": "2023-10-01T09:45:00Z",
+      "settings": {
+        "theme": "dark",
+        "notifications": true
+      }
+    },
+    {
+      "id": 2,
+      "name": "Bob",
+      "email": "bob@example.com",
+      "roles": ["viewer"],
+      "createdAt": "2023-11-11T12:00:00Z",
+      "settings": {
+        "theme": "light",
+        "notifications": false
+      }
+    },
+    {
+      "id": 3,
+      "name": "Charlie",
+      "email": "charlie@example.com",
+      "roles": ["moderator", "editor"],
+      "createdAt": "2024-01-01T08:20:00Z",
+      "settings": {
+        "theme": "dark",
+        "notifications": true
+      }
+    }
+  ],
+
+  "products": [
+    {
+      "id": 1001,
+      "name": "Laptop Pro 15",
+      "price": 1499.99,
+      "stock": 42,
+      "categories": ["electronics", "computers"],
+      "specs": {
+        "cpu": "Intel i7",
+        "ram": "16GB",
+        "storage": "512GB SSD"
+      }
+    },
+    {
+      "id": 1002,
+      "name": "SuperPhone X",
+      "price": 899.49,
+      "stock": 120,
+      "categories": ["electronics", "phones"],
+      "specs": {
+        "cpu": "Snapdragon 8",
+        "ram": "8GB",
+        "storage": "256GB"
+      }
+    },
+    {
+      "id": 1003,
+      "name": "4K Ultra Monitor",
+      "price": 399.0,
+      "stock": 0,
+      "categories": ["electronics", "monitors"],
+      "specs": {
+        "size": "27 inch",
+        "resolution": "3840x2160"
+      }
+    }
+  ],
+
+  "logs": {
+    "file": "/var/log/megapp/app.log",
+    "maxSizeMB": 250,
+    "keepFiles": 12,
+    "rotationEnabled": true,
+    "levels": ["DEBUG", "INFO", "WARNING", "ERROR", "CRITICAL"]
+  },
+
+  "stats": {
+    "uptimeHours": 3245,
+    "requestCount": 2839104,
+    "errorCount": 231,
+    "averageResponseMs": 12.8,
+    "traffic": {
+      "last24h": {
+        "requests": 203584,
+        "errors": 4,
+        "avgResponseTime": 10.2
+      },
+      "last7d": {
+        "requests": 1284000,
+        "errors": 32,
+        "avgResponseTime": 11.7
+      }
+    }
+  },
+
+  "randomTestData": {
+    "pi": 3.14159,
+    "colors": ["red", "green", "blue", "yellow"],
+    "magicNumbers": [7, 13, 42, 88, 256],
+    "longText": "Dies ist ein langer Beispielsatz zur Demonstration von grossen JSON-Files.",
+    "multiLineText": "Zeile 1\nZeile 2\nZeile 3",
+    "nestedArray": [
+      [1, 2, 3],
+      [10, 20, 30],
+      [100, 200, 300]
+    ]
+  }
+}
