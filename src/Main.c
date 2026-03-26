@@ -11,7 +11,7 @@
 #endif
 
 int main(){
-    Json yl = Json_Make("./code/Main.json");
+    Json yl = Json_Make("./code/Test.json");
     
     CStr value0 = Json_GetCStr(&yl,"database/replica/hosts/0");
     printf("Value found: '%s'\n",value0);
