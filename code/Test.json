@@ -1,6 +1,12 @@
 {
-    "name": "MegaTestApp",
-    "version": "3.7.12",
-    "debug": true,
-    "releaseDate": "2024-01-15T14:30:00Z"
+    "app": {
+        "name": "MegaTestApp",
+        "version": "3.7.12",
+        "debug": true,
+        "releaseDate": "2024-01-15T14:30:00Z",
+        "author": {
+          "name": "John Developer",
+          "email": "developer@example.com"
+        }
+    }
 }

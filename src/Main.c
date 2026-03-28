@@ -11,15 +11,15 @@
 #endif
 
 int main(){
-    Json yl = Json_Make("./code/Test.json");
+    Json yl = Json_Make("./code/Main.json");
     
-    CStr value0 = Json_GetCStr(&yl,"database/replica/hosts/0");
+    CStr value0 = Json_GetCStr(&yl,"server/security/allowedIPs/0");
     printf("Value found: '%s'\n",value0);
 
-    Boolean value1 = Json_GetBool(&yl,"logging/rotation/enabled");
+    Boolean value1 = Json_GetBool(&yl,"users/0/settings/notifications");
     printf("Value found: '%d'\n",value1);
     
-    Json_Set(&yl,"database/replica/hosts/0","yanis@gmail.com");
+    Json_Set(&yl,"server/security/allowedIPs/0","192.168.2.1");
 
     Json_Print(&yl);
     Json_Save(&yl,"./code/Save.json");
