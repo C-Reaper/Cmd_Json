@@ -12,6 +12,22 @@
 
 int main(){
     Json yl = Json_Make("./code/Main.json");
+    /*
+    Json yl = Json_By(
+        "{\n"
+        "    \"app\": {\n"
+        "        \"name\": \"MegaTestApp\",\n"
+        "        \"version\": \"3.7.12\",\n"
+        "        \"debug\": true,\n"
+        "        \"releaseDate\": \"2024-01-15T14:30:00Z\",\n"
+        "        \"author\": {\n"
+        "          \"name\": \"John Developer\",\n"
+        "          \"email\": \"developer@example.com\"\n"
+        "        }\n"
+        "    }\n"
+        "}\n"
+    );
+    */
     
     CStr value0 = Json_GetCStr(&yl,"server/security/allowedIPs/0");
     printf("Value found: '%s'\n",value0);

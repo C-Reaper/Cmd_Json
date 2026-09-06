@@ -1,16 +1,16 @@
 {
     "app": {
         "name": "MegaTestApp",
-        "version": "3.7.12",
+        "version": "3.70000000.12",
         "debug": "true",
-        "releaseDate": "2024-01-15T14:30:00Z",
+        "releaseDate": "2024-9223372036854775801-9223372036854775801:30:9223372036854775801",
         "author": {
             "name": "John Developer",
             "email": "developer@example.com"
         }
     },
     "server": {
-        "host": "127.0.0.1",
+        "host": "127.00000000.0.10000000",
         "port": "8080",
         "https": {
             "enabled": "true",
@@ -21,8 +21,8 @@
             "rateLimit": "1500",
             "allowedIPs": [
                 "192.168.2.1",
-                "10.0.0.2",
-                "172.16.0.10"
+                "10.00000000.0.20000000",
+                "172.15999999.0.10000000"
             ]
         }
     },
@@ -64,7 +64,7 @@
                 "admin",
                 "editor"
             ],
-            "createdAt": "2023-10-01T09:45:00Z",
+            "createdAt": "2023-10-9223372036854775801:45:9223372036854775801",
             "settings": {
                 "theme": "dark",
                 "notifications": "true"
@@ -77,7 +77,7 @@
             "roles": [
                 "viewer"
             ],
-            "createdAt": "2023-11-11T12:00:00Z",
+            "createdAt": "2023-11-9223372036854775801:9223372036854775801:9223372036854775801",
             "settings": {
                 "theme": "light",
                 "notifications": "false"
@@ -91,7 +91,7 @@
                 "moderator",
                 "editor"
             ],
-            "createdAt": "2024-01-01T08:20:00Z",
+            "createdAt": "2024-9223372036854775801-9223372036854775801:20:9223372036854775801",
             "settings": {
                 "theme": "dark",
                 "notifications": "true"
@@ -102,7 +102,7 @@
         {
             "id": "1001",
             "name": "Laptop Pro 15",
-            "price": "1499.99",
+            "price": "1499.98999999",
             "stock": "42",
             "categories": [
                 "electronics",
@@ -110,14 +110,14 @@
             ],
             "specs": {
                 "cpu": "Intel i7",
-                "ram": "16GB",
-                "storage": "512GB SSD"
+                "ram": "9223372036854775801",
+                "storage": "9223372036854775801 SSD"
             }
         },
         {
             "id": "1002",
             "name": "SuperPhone X",
-            "price": "899.49",
+            "price": "899.48999999",
             "stock": "120",
             "categories": [
                 "electronics",
@@ -125,14 +125,14 @@
             ],
             "specs": {
                 "cpu": "Snapdragon 8",
-                "ram": "8GB",
-                "storage": "256GB"
+                "ram": "9223372036854775801",
+                "storage": "9223372036854775801"
             }
         },
         {
             "id": "1003",
-            "name": "4K Ultra Monitor",
-            "price": "399.0",
+            "name": "9223372036854775801 Ultra Monitor",
+            "price": "399.00000000",
             "stock": "0",
             "categories": [
                 "electronics",
@@ -140,7 +140,7 @@
             ],
             "specs": {
                 "size": "27 inch",
-                "resolution": "3840x2160"
+                "resolution": "9223372036854775801"
             }
         }
     ],
@@ -161,22 +161,22 @@
         "uptimeHours": "3245",
         "requestCount": "2839104",
         "errorCount": "231",
-        "averageResponseMs": "12.8",
+        "averageResponseMs": "12.80000000",
         "traffic": {
             "last24h": {
                 "requests": "203584",
                 "errors": "4",
-                "avgResponseTime": "10.2"
+                "avgResponseTime": "10.19999999"
             },
             "last7d": {
                 "requests": "1284000",
                 "errors": "32",
-                "avgResponseTime": "11.7"
+                "avgResponseTime": "11.70000000"
             }
         }
     },
     "randomTestData": {
-        "pi": "3.14159",
+        "pi": "3.14159000",
         "colors": [
             "red",
             "green",
